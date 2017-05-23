@@ -1,8 +1,26 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.project {
+  /*width: 49.8%;*/
+  display:inline-block;
 }
 
-a {
-  color: #00B7FF;
+.description {
+  font-size: 2vh;
+}
+
+.middles {
+  padding-left: 30%;
+  
+}
+
+.panel {
+  width: 100%;
+}
+
+.navbar {
+  background: #5f4687;
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a{
+  color: white;
 }

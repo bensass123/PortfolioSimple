@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link href="/stylesheets/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <script id="projectTemplate" type="text/x-handlebars-template">
+    
+        {{#each this}}
+          <div class='col-md-6 col-xs-12'>
+            <div class="panel panel-primary project">
+                <div class="panel-heading">{{title}}</div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Github:   <a href='{{github}}'> {{github}}</a></li>
+                        <li>Heroku:   <a href='{{heroku}}'> {{heroku}}</a></li>
+                    </ul>
+                    <p class='description'>{{description}}</p>
+                </div>
+            </div>
+          </div>
+        {{/each}}
+    </script>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <!--logo-->
+                <H2>LOGO</H2>
+            </div>
+
+            <ul class="nav navbar-nav middles">
+                <li><a href="javascript:;" id='about' data-toggle="modal" data-target="#aboutModal">About me</a></li>
+                <li><a href="javascript:;" id='contact' data-toggle="modal" data-target="#contactModal">Contact</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/bensass123/" target="_blank">Github</a></li>
+                <li><a href="https://stackoverflow.com/users/7096748/ben-sass" target="_blank">Stack Overflow</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class='container-fluid'>
+        <div id='results'></div>
+    </div>
+
+
+    <!-- Modals (contact and about) -->
+    <div id="contactModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Contact Info</h4>
+            </div>
+            <div class="modal-body">
+                <p>Make contact:</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="aboutModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Ben Sass</h4>
+            </div>
+            <div class="modal-body">
+                <p>He's pretty decent at:</p>
+                <ul>
+                    <li>NodeJS</li>
+                    <li>ReactJS</li>
+                    <li>React Native</li>
+                    <li>AngularJS</li>
+                    <li>Rest API Development</li>
+                    <li>AJAX</li>
+                    <li>Bootstrap for Responsive Layouts</li>
+                    <li>Mobile First Design</li>
+                    <li>ES6</li>
+                    <li>Vanilla Javascript</li>
+                    <li>jQuery</li>
+                    <li>Express.js</li>
+                    <li>MongoDB</li>
+                    <li>MySQL</li>
+                    <li>ClearDB</li>
+                    <li>Heroku</li>
+                    <li>Git Version Control</li>
+                    <li>HTML5 Canvas</li>
+                    <li>Velocity.js Animations</li>
+                    <li>CSS3</li>
+                    <li>Handlebars.js</li>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+
+        </div>
+    </div>
+        
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <!--Handlebars-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+
+    <script src="./javascripts/app.js"></script>
+</body>
+
+</html>
