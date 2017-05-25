@@ -67,6 +67,7 @@ nav {
   padding-top: 3vh;
   padding-bottom: 3vh;
   line-height: 4vh;
+  z-index:999;
 }
 
 #nav-mobile {

@@ -18,6 +18,13 @@ module.exports = [
         github: 'https://github.com/bensass123/hangman',
         heroku: 'https://sumohangman.herokuapp.com',
         description: 'Test your hangman abilities, a simple web game.'
+    },
+
+    {
+        title: 'Craigslist Notify',
+        github: 'https://github.com/bensass123/clnotifier',
+        heroku: 'https://clnotify.herokuapp.com',
+        description: "A web app that let's the user set-up text notifications when their craigslist search turns up new results"
     }
 
 ];
